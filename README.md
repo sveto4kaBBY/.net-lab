@@ -47,5 +47,6 @@
   - После успешного удаления пользователь должен получить уведомление об этом.
 
   
-![image](https://github.com/user-attachments/assets/ae3ec7a5-20c8-429f-8172-77879311e571)
+![image](https://github.com/user-attachments/assets/186b5fdf-d63b-4d97-8111-ee3640be194f)
+
 
