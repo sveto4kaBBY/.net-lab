@@ -19,9 +19,9 @@ public class UserEntity: BaseEntity
     
     public int ClubId { get; set; }
     
-    [ForeignKey("RoleId")]
     public int RoleId { get; set; }
     
+    [ForeignKey("RoleId")]
     public RoleEntity Role { get; set; }
     
     public ICollection<TrainingEntity> Trainings { get; set; }

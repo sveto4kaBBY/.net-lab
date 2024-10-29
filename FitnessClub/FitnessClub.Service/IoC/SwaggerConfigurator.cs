@@ -6,6 +6,7 @@ public class SwaggerConfigurator
     {
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
+        
     }
 
     public static void ConfigureApplication(IApplicationBuilder app)
