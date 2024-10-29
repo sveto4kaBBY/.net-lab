@@ -8,7 +8,33 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.13"/>
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+        <PackageReference Include="Serilog.AspNetCore" Version="8.0.3" />
+        <PackageReference Include="Serilog.Enrichers.CorrelationId" Version="3.0.1" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="FitnessClub.DataAccess\Entities\ClubEntity.cs" />
+      <Compile Remove="FitnessClub.DataAccess\Entities\RoleEntity\**" />
+      <Compile Remove="FitnessClub.DataAccess\Repository.cs" />
+      <Compile Remove="Controllers\**" />
+      <Compile Remove="WeatherForecast.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="FitnessClub.DataAccess\Entities\RoleEntity\**" />
+      <EmbeddedResource Remove="Controllers\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="FitnessClub.DataAccess\Entities\RoleEntity\**" />
+      <Content Remove="Controllers\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="FitnessClub.DataAccess\Entities\RoleEntity\**" />
+      <None Remove="Controllers\**" />
     </ItemGroup>
 
 </Project>

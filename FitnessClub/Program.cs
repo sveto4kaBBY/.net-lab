@@ -1,25 +1,16 @@
+using FitnessClub.FitnessClub.Service.IoC;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+SerilogConfigurator.ConfigureService(builder);
+SwaggerConfigurator.ConfigureServices(builder.Services);
+DbContextConfigurator.ConfigureService(builder);
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+SerilogConfigurator.ConfigureApplication(app);
+SwaggerConfigurator.ConfigureApplication(app);
+DbContextConfigurator.ConfigureApplication(app);
 
 app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
 app.Run();
