@@ -7,7 +7,7 @@ public class UserEntity: BaseEntity
 {
     public string Name { get; set; }
     
-    public int PasswordHash { get; set; }
+    public string PasswordHash { get; set; }
     
     public string Surname { get; set; }
     
