@@ -1,6 +1,7 @@
 ﻿
 using System.Reflection;
 using FitnessClub.FitnessClub.BL.Mapper;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace FitnessClub.FitnessClub.Service.IoC
 {

@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System;
+using AutoMapper;
 using FitnessClub.FitnessClub.BL.Users.Entity;
 using FitnessClub.FitnessClub.BL.Users.Manager;
 using FitnessClub.FitnessClub.BL.Users.Provider;

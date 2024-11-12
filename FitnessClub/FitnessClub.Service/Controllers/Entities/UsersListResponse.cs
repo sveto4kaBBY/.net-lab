@@ -1,4 +1,5 @@
-﻿using FitnessClub.FitnessClub.BL.Users.Entity;
+﻿using System.Collections.Generic;
+using FitnessClub.FitnessClub.BL.Users.Entity;
 using FitnessClub.FitnessClub.DataAccess.Entities;
 
 namespace FitnessClub.FitnessClub.Service.Controllers.Entities
