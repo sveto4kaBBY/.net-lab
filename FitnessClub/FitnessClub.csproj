@@ -7,7 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="AutoMapper" Version="13.0.1" />
         <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.13"/>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
@@ -41,6 +40,13 @@
     <ItemGroup>
       <None Remove="FitnessClub.DataAccess\Entities\RoleEntity\**" />
       <None Remove="Controllers\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="FitnessClub.BL\Club\Manager\" />
+      <Folder Include="FitnessClub.BL\Club\Provider\" />
+      <Folder Include="FitnessClub.BL\Training\Manager\" />
+      <Folder Include="FitnessClub.BL\Training\Provider\" />
     </ItemGroup>
 
 </Project>

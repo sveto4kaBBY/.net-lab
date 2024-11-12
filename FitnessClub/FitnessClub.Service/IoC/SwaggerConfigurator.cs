@@ -1,4 +1,7 @@
-﻿namespace FitnessClub.FitnessClub.Service.IoC;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace FitnessClub.FitnessClub.Service.IoC;
 
 public class SwaggerConfigurator
 {
